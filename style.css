@@ -1,0 +1,24 @@
+*{            /*Resetting any margin and padding that may have been set by the browser for all elements on the page*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+div{  /* making all cards in one row*/
+ display: flex; 
+}
+.icon{
+ 
+ padding: 5px;
+ width: 100%;
+ 
+
+}
+
+header{
+ background:
+  url(imgs/logo.png) top left/60px no-repeat, /* adding logo and position it*/
+  url(imgs/headers/gallery-header.jpg) center/cover no-repeat;
+ width: 100%; 
+ min-height: 500px;
+
+}
