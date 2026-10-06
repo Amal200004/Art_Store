@@ -135,6 +135,10 @@ input[value="Search"] {
   border-radius: 5px 5px 0 0 ;
   padding-top: 18px;
 }
+.third{
+border: none;
+
+}
 
 table caption {
   background-color: var(--color-support-4-900);
