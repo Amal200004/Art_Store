@@ -76,23 +76,30 @@ input[type="search"] {
   width: 20%;
   height: 25px;
   padding: 0 3px;
-  border-width: 1px;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 3px;
+}
+select {
+ 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('imgs/actions_icons/triangle.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 10px; 
+
+  padding-right: 30px;
+  cursor: pointer;
+   width: 12%;
+  height: 28px;
   border-color: var(--color-neutral-300);
   border-radius: 3px;
+  padding-left: 6px;
 }
 
-select[name="genre"] {
-  width: 12%;
-  height: 28px;
-  border-color: var(--color-neutral-300);
-  border-radius: 3px;
-}
-select[name="actions"] {
-  width: 12%;
-  height: 28px;
-  border-color: var(--color-neutral-300);
-  border-radius: 3px;
-}
+
 input[value="Filter"] {
   width: 5%;
   height: 30px;
