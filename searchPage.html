@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Advanced Art work search</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Advanced Art work search.">
+  <link rel="stylesheet" href="searchStyle.css"> <!-- linking html page to css file -->
+  <link rel="stylesheet" href="variables-palette-7.css"> <!-- linking html page to css file -->
+</head>
+
+<body class="page-layout">
+  <header>
+    <h1>Advanced Art Work Search</h1>
+
+  </header>
+  <main class="main-layout">
+
+    <section class="form-section">
+      <form method="get" action="https://www.randyconnolly.com/tests/process.php">
+        <fieldset class="first">
+          <input type="search" name="search" placeholder="Search Tites" />
+          <label>Subject</label>
+          <input type="radio" name="subject" value="History" id="History">
+          <label for="History">History</label>
+          <input type="radio" name="subject" value="Person" id="Person">
+          <label for="Person">Person</label>
+          <input type="radio" name="subject" value="Landscape" id="Landscape">
+          <label for="Landscape">Landscape</label>
+          <select name="filter">
+            <option selected disabled>Select Genre</option>
+            <option value="0">Baroque</option>
+            <option value="1">Renaissance</option>
+            <option value="2">Realism</option>
+          </select>
+          <input type="button" value="Filter">
+
+        </fieldset>
+        <fieldset class="sec">
+          <select name="actions">
+            <option selected disabled>bulk Actions</option>
+            <option value="0">Archive</option>
+            <option value="1">Edit</option>
+            <option value="2">Delete</option>
+            <option value="3">Collection</option>
+          </select>
+          <input type="button" value="Apply to All">
+          <input type="submit" value="Search">
+
+        </fieldset>
+
+
+
+    </section>
+
+    <section class="table-section">
+      <table>
+        <caption>Paintings</caption>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Year</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td>
+              <div class="checkbox"><input type="checkbox" name="index[]" value="10" id="paint1">
+                <label for="paint1"><img src="imgs/National Gallery of Art/nga1.png"></label>
+              </div>
+            </td>
+
+            <td>Abstract Expressionism</td>
+            <td>Hans Hofmann</td>
+            <td>1957</td>
+            <td>Baroque</td>
+            <td>
+              <button class="edit"></button>
+              <button class="archive"></button>
+              <button class="delete"></button>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox"><input type="checkbox" name="index[]" value="20" id="paint2">
+                <label for="paint2"><img src="imgs/National Gallery of Art/nga2.png"></label>
+              </div>
+            </td>
+            <td>Lavender Mist</td>
+            <td>Jackson Pollock</td>
+            <td>1950</td>
+            <td>Baroque</td>
+            <td>
+              <button class="edit"></button>
+              <button class="archive"></button>
+              <button class="delete"></button>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox"><input type="checkbox" name="index[]" value="30" id="paint3">
+                <label for="paint3"><img src="imgs/National Gallery of Art/nga3.png"></label>
+              </div>
+            </td>
+            <td>Crawford Notch</td>
+            <td>Thomas Cole</td>
+            <td>1839</td>
+            <td>Realism</td>
+            <td>
+              <button class="edit"></button>
+              <button class="archive"></button>
+              <button class="delete"></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox"><input type="checkbox" name="index[]" value="40" id="paint4">
+                <label for="paint4"><img src="imgs/National Gallery of Art/nga4.png"></label>
+              </div>
+            </td>
+            <td>Stadtschloss</td>
+            <td>Paul Klee</td>
+            <td>1927</td>
+            <td>Renaissance</td>
+            <td>
+              <button class="edit"></button>
+              <button class="archive"></button>
+              <button class="delete"></button>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox"><input type="checkbox" name="index[]" value="50" id="paint5">
+                <label for="paint5"><img src="imgs/National Gallery of Art/searchPic5.jpg"></label>
+              </div>
+            </td>
+            <td>A Gale at Sea</td>
+            <td>Willem van de Velde The Younger</td>
+            <td>1670</td>
+            <td>Realism</td>
+            <td>
+              <button class="edit"></button>
+              <button class="archive"></button>
+              <button class="delete"></button>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+
+
+
+    </section>
+    </form>
+
+  </main>
+  <footer><a class="home" href="index.html">Home Page</a></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

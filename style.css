@@ -1,24 +1,39 @@
-*{            /*Resetting any margin and padding that may have been set by the browser for all elements on the page*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+* {
+  /*Resetting any margin and padding that may have been set by the browser for all elements on the page*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-div{  /* making all cards in one row*/
- display: flex; 
+div {
+  /* making all cards in one row*/
+  display: flex;
 }
-.icon{
+.icon {
+  padding: 5px;
+  width: 100%;
+}
+header a img {
+  display: none;
+}
+
+header {
+  background:
+    url(imgs/logo.png) top left/60px no-repeat,
+    /* adding logo and position it*/ url(imgs/headers/gallery-header.jpg)
+      center/cover no-repeat;
+  width: 100%;
+  min-height: 500px;
+}
+
+.search {
+    display: block;
+    font-size: larger;
+  background-color: #044E54;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 1px;
+  max-width: 100%;
+  margin: 0 auto 20px;
  
- padding: 5px;
- width: 100%;
- 
-
-}
-
-header{
- background:
-  url(imgs/logo.png) top left/60px no-repeat, /* adding logo and position it*/
-  url(imgs/headers/gallery-header.jpg) center/cover no-repeat;
- width: 100%; 
- min-height: 500px;
-
 }

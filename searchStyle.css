@@ -1,0 +1,234 @@
+
+* {
+  /*Resetting any margin and padding that may have been set by the browser for all elements on the page*/
+
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+    
+}
+
+.page-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.main-layout {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+h1 {
+  background-color: var(--color-support-4-900);
+  color: white;
+  font-size: 160%;
+  text-align: center;
+  border-radius: 3px;
+  max-width: 87%;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 2;
+  font-weight: normal;
+  padding: 5px 5px;
+}
+main {
+  background-color: var(--color-neutral-050);
+  border-radius: 5px;
+  max-width: 96%;
+  margin: 0 auto 0;
+  margin-top: -45px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  max-width: 92%;
+  margin: 0 auto 20px;
+}
+.first {
+  display: flex;
+  gap: 20px;
+  background-color: var(--color-neutral-200);
+  border: none;
+  margin-bottom: 2px;
+  padding: 15px 15px;
+  border-radius: 5px 5px 0 0;
+}
+.sec {
+  display: flex;
+  background-color: var(--color-neutral-200);
+  border: none;
+  padding: 15px 15px;
+  border-radius: 0 0 5px 5px;
+  gap: 6px;
+}
+input[type="search"] {
+  width: 20%;
+  height: 25px;
+  padding: 0 3px;
+  border-width: 1px;
+  border-color: var(--color-neutral-300);
+  border-radius: 3px;
+}
+
+select[name="genre"] {
+  width: 12%;
+  height: 28px;
+  border-color: var(--color-neutral-300);
+  border-radius: 3px;
+}
+select[name="actions"] {
+  width: 12%;
+  height: 28px;
+  border-color: var(--color-neutral-300);
+  border-radius: 3px;
+}
+input[value="Filter"] {
+  width: 5%;
+  height: 30px;
+  background-color: var(--color-support-4-600);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+input[value="Apply to All"] {
+  width: 9%;
+  height: 30px;
+  background-color: var(--color-support-4-600);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+input[value="Search"] {
+  width: 6%;
+  height: 30px;
+  background-color: var(--color-support-4-600);
+  border-radius: 3px;
+  border: none;
+  color: white;
+  margin-left: 10%;
+}
+.table-section {
+  width: 92%;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--color-neutral-200);
+  border-radius: 5px 5px 0 0 ;
+  padding-top: 18px;
+}
+
+table caption {
+  background-color: var(--color-support-4-900);
+  color: white;
+  font-size: 140%;
+  text-align: center;
+  border-radius: 3px;
+}
+
+table {
+  border-spacing: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--color-neutral-300);
+}
+
+thead {
+  background-color: var(--color-support-4-100);
+  border-left: none;
+  border-right: none;
+  border-radius: 3px;
+}
+.edit {
+  border-radius: 3px;
+  background-color: var(--color-support-4-500);
+  background-image: url(imgs/actions_icons/pen.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background-size: 18px 18px;
+  background-position: center;
+}
+.archive {
+  border-radius: 3px;
+  background-color: var(--color-support-4-050);
+  background-image: url(imgs/actions_icons/folder.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background-size: 18px 18px;
+  background-position: center;
+}
+.delete {
+  border-radius: 3px;
+  background-color: var(--color-support-4-050);
+  background-image: url(imgs/actions_icons/trash\ can.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background-size: 18px 18px;
+  background-position: center;
+}
+img {
+  width: 70%;
+  margin: 5px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a{
+   display: inline-block;
+    font-size: smaller;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  max-width: 100%;
+  
+ margin-top: auto;
+ margin-right: auto;
+ margin-bottom: 12px;
+ margin-left: 12px;
+}
+footer a:hover{
+color: var(--color-primary-1-300);
+
+}
+footer{
+  display: flex;
+ 
+  background-color: var(--color-support-4-900);
+  
+  width: 96%;
+  min-height: 50px;
+   margin: 0 auto 0;
+  
+}
+body{
+  margin-bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
